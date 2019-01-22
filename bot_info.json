@@ -1,8 +1,8 @@
-
-# CLIENT_ID = 537131828570750976
-# PERMISSIONS INTEGER = 67648
-# auth bot url
-# https://discordapp.com/oauth2/authorize?client_id=537131828570750976&scope=bot&permissions=67648
+{
+    "client-id": 537131828570750976,
+    "permissions": 67648,
+    "invite": "https://discordapp.com/oauth2/authorize?client_id=537131828570750976&scope=bot&permissions=67648"
+}
 
 
 
