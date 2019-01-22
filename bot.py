@@ -1,5 +1,9 @@
 import discord
+import json
 
+# retrieve token (protected)
+settings = json.loads(open('settings.json').read())
+token = settings['token']
 
 class MyClient(discord.Client):
 	async def on_ready(self):
@@ -16,4 +20,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('NTM3MTMxODI4NTcwNzUwOTc2.DygzMQ.a8enKXYvfwry6uxt7TR_ULypv70')
+client.run(token)
