@@ -5,6 +5,8 @@ import json
 settings = json.loads(open('settings.json').read())
 token = settings['token']
 
+bot_info = json.loads(open('bot_info.json').read())
+
 class MyClient(discord.Client):
 	async def on_ready(self):
 		print('Logged in as:')
