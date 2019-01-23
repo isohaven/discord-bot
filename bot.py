@@ -17,8 +17,11 @@ class MyClient(discord.Client):
 		if message.author == self.user:
 			return
 		# print(f'{message.channel}: {message.author}:{message.author.name}: {message.content}')
+
 		if message.content.lower() == 'ping':
 			await message.channel.send('pong')
+
+
 
 
 client = MyClient()
