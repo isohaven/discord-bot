@@ -27,8 +27,8 @@ class MyClient(discord.Client):
 
                 if message.content.lower() == 'ping':
                         await message.channel.send('pong')
-
-                if message.content.lower() == '!stop':
+                        print(str(message.author.roles))
+                if message.content.lower() == '!stop' and message.author.permissions_in(message.channel).administrator: 
                      await client.logout()
 
 
